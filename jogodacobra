@@ -66,7 +66,7 @@ while True:
     else:
         snake.pop()
 
-    screen.fill(black)
+    screen.fill(black) ## 69 linhas, não grite
     for segment in snake:
         pygame.draw.rect(screen, green, (segment[0], segment[1], size, size))
 
@@ -81,5 +81,3 @@ while True:
         toaster.show_toast("Score", f"Seu score é: {score}", duration=3)
         last_score_notified = score
                            
-
-## 69 linhas, não grite
